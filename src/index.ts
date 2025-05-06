@@ -1,6 +1,7 @@
 import BrochurePopup from "./components/brochure-popup";
 
-const cookieBanner = new BrochurePopup();
+const brochurePopup = new BrochurePopup();
+brochurePopup.setup();
 
 // (function () {
 //   function setCookie(cname, cvalue, exdays) {

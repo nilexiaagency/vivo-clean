@@ -7,7 +7,6 @@ export default class BrochurePopup {
 
   constructor() {
     this.emailSignupDialog = document.querySelector("#brochure-download");
-    this.setup();
   }
 
   setup() {
@@ -21,7 +20,7 @@ export default class BrochurePopup {
   }
 
   checkForCookie() {
-    const emailSignupCookie = cookieHelper.getCookie("brochure-signup");
+    const emailSignupCookie = cookieHelper.getCookie("brochure-shown");
     return emailSignupCookie != "";
   }
 
@@ -33,7 +32,7 @@ export default class BrochurePopup {
 
   setEmailSignupCookie() {
     cookieHelper.setCookie({
-      cookieName: "brochure-signup",
+      cookieName: "brochure-shown",
       cookieValue: "true",
       expirationDays: 30
     })
