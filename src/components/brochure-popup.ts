@@ -10,7 +10,6 @@ export default class BrochurePopup {
   }
 
   setup() {
-    console.log(this.emailSignupDialog);
     if(this.emailSignupDialog == null) return;
 
     const cookieSet = this.checkForCookie();
